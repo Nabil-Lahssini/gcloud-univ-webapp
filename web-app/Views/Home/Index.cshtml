@@ -3,7 +3,12 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Welcome, please insert a new budget !</h1>
+    <form asp-action="form" method="post" id="myform">
+        <input id="type" name="type" type="text" value="" placeholder="Type of budget" /> <hr />
+        <input id="product" name="product" type="text" value="" placeholder="Budget for which product" /><hr />
+        <input id="budget" name="budget" type="number" min="0" placeholder="Price" /><hr />
+    </form>
+        <button type="submit" form="myform" value="Submit">Submit</button>
 </div>
 

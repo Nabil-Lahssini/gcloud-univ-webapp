@@ -5,6 +5,16 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>web_app</RootNamespace>
+    <DockerComposeProjectPath>../docker-compose.dcproj</DockerComposeProjectPath>
+    <UserSecretsId>85b55928-2ade-4a70-b009-08dddc448a18</UserSecretsId>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Google.Cloud.Firestore" />
+    <None Remove="Google.Apis.Auth" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Google.Cloud.Firestore" Version="3.0.0" />
+    <PackageReference Include="Google.Apis.Auth" Version="1.57.0" />
+  </ItemGroup>
 </Project>
