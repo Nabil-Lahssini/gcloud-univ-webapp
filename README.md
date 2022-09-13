@@ -1,3 +1,2 @@
 # How to use?
-Go to https://console.cloud.google.com/apis/credentials and generate new credentials in json format.
-Put the credentials in the root of this repo.
+Just deploy this web app using cloud build and app run on the SAME project as the firebase.
